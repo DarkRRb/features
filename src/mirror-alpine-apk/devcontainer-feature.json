@@ -1,0 +1,23 @@
+{
+    "name": "mirror of alpine apk",
+    "id": "mirror-alpine-apk",
+    "version": "1.0.0",
+    "description": "Modify the source of alpine's apk",
+    "options": {
+        "scheme": {
+            "type": "string",
+            "default": "https",
+            "description": "The scheme of the source"
+        },
+        "host": {
+            "type": "string",
+            "default": "dl-cdn.alpinelinux.org",
+            "description": "The host of the source"
+        },
+        "spath": {
+            "type": "string",
+            "default": "/alpine",
+            "description": "The path of the source"
+        }
+    }
+}
