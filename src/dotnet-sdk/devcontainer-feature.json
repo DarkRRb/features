@@ -1,0 +1,18 @@
+{
+    "name": "dotnet sdk",
+    "id": "dotnet-sdk",
+    "version": "0.0.1",
+    "description": "add dotnet sdk",
+    "options": {
+        "versions": {
+            "type": "string",
+            "default": "lts",
+            "description": "Version to install, use commas to separate sts, lts, A.B, A.B.Cxx"
+        },
+        "proxy": {
+            "type": "string",
+            "default": "",
+            "description": "The proxy to use, supporting both HTTP and HTTPS; leaving it empty means no proxy will be used."
+        }
+    }
+}
