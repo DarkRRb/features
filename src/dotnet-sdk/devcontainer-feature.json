@@ -1,11 +1,11 @@
 {
     "name": "dotnet sdk",
     "id": "dotnet-sdk",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "add dotnet sdk",
     "containerEnv": {
-        "DOTNET_ROOT": "$HOME/.dotnet",
-        "PATH": "$PATH:$DOTNET_ROOT:$HOME/.dotnet/tools",
+        "DOTNET_ROOT": "$_REMOTE_USER_HOME/.dotnet",
+        "PATH": "$PATH:$DOTNET_ROOT:$_REMOTE_USER_HOME/.dotnet/tools",
         "DOTNET_RUNNING_IN_CONTAINER": "true",
         "DOTNET_USE_POLLING_FILE_WATCHER": "true"
     },
