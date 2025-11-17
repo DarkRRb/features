@@ -15,8 +15,12 @@ add dotnet sdk
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| versions | Version to install, use commas to separate sts, lts, A.B, A.B.Cxx | string | lts |
-| proxy | The proxy to use, supporting both HTTP and HTTPS; leaving it empty means no proxy will be used. | string | - |
+| versions | Enter additional .NET SDK versions, separated by commas
+Use 'latest' for the latest version
+'lts' for the latest LTS version
+'X.Y' or 'X.Y.Z' for a specific version
+'X.Y-preview' or 'X.Y-daily' for prereleases | string | lts |
+| workloads | Enter additional .NET SDK workloads, separated by commas | string | - |
 
 
 
