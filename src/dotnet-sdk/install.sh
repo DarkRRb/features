@@ -2,6 +2,9 @@
 
 set -e
 
+# install dependencies
+apk add --no-cache icu-libs
+
 # download install script
 tmpdir="$(mktemp -d)"
 curl -fsSL "https://dot.net/v1/dotnet-install.sh" -o "$tmpdir/dotnet-install.sh"

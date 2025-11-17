@@ -1,7 +1,7 @@
 {
     "name": "dotnet sdk",
     "id": "dotnet-sdk",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "add dotnet sdk",
     "containerEnv": {
         "DOTNET_ROOT": "/usr/local/dotnet",
