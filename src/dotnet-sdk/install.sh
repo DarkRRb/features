@@ -3,7 +3,7 @@
 set -e
 
 # install dependencies
-apk add --no-cache icu-libs
+apk add --no-cache icu-data-full
 
 # download install script
 tmpdir="$(mktemp -d)"
