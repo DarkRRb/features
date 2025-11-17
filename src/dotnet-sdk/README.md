@@ -7,7 +7,7 @@ add dotnet sdk
 
 ```json
 "features": {
-    "ghcr.io/DarkRRb/features/dotnet-sdk:0": {}
+    "ghcr.io/DarkRRb/features/dotnet-sdk:1": {}
 }
 ```
 
