@@ -1,18 +1,24 @@
 {
     "name": "dotnet sdk",
     "id": "dotnet-sdk",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "add dotnet sdk",
+    "containerEnv": {
+        "DOTNET_ROOT": "$HOME/.dotnet",
+        "PATH": "$PATH:$DOTNET_ROOT:$HOME/.dotnet/tools",
+        "DOTNET_RUNNING_IN_CONTAINER": "true",
+        "DOTNET_USE_POLLING_FILE_WATCHER": "true"
+    },
     "options": {
         "versions": {
             "type": "string",
             "default": "lts",
-            "description": "Version to install, use commas to separate sts, lts, A.B, A.B.Cxx"
+            "description": "Enter additional .NET SDK versions, separated by commas\nUse 'latest' for the latest version\n'lts' for the latest LTS version\n'X.Y' or 'X.Y.Z' for a specific version\n'X.Y-preview' or 'X.Y-daily' for prereleases"
         },
-        "proxy": {
+        "workloads": {
             "type": "string",
             "default": "",
-            "description": "The proxy to use, supporting both HTTP and HTTPS; leaving it empty means no proxy will be used."
+            "description": "Enter additional .NET SDK workloads, separated by commas"
         }
     }
 }

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 . /etc/os-release
 
 if [ "${ID}" != "alpine" ]; then
