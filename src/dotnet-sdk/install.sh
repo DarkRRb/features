@@ -1,5 +1,5 @@
 echo VERSIONS=$VERSIONS
 echo PROXY=$PROXY
-if [ -z "${PROXY}" ] then
+if [ -z "${PROXY}" ]; then
     echo NOPROXY
 fi
