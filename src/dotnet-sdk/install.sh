@@ -13,7 +13,7 @@ for version in "${versions[@]}"; do
     version="${version#"${version%%[![:space:]]*}"}"
     version="${version%"${version##*[![:space:]]}"}"
 
-    $tmpdir/dotnet-install.sh --channel $version --no-path --verbose
+    $tmpdir/dotnet-install.sh --channel $version --install-path /usr/local/dotnet --no-path --verbose
 done
 
 # install workloads
