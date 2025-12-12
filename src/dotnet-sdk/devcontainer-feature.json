@@ -13,7 +13,7 @@
         "versions": {
             "type": "string",
             "default": "lts",
-            "description": "Enter additional .NET SDK versions, separated by commas\nUse 'latest' for the latest version\n'lts' for the latest LTS version\n'X.Y' or 'X.Y.Z' for a specific version\n'X.Y-preview' or 'X.Y-daily' for prereleases"
+            "description": "Enter additional .NET SDK versions, separated by commas. Use 'latest' for the latest version. 'lts' for the latest LTS version. 'X.Y' or 'X.Y.Z' for a specific version.'X.Y-preview' or 'X.Y-daily' for prereleases"
         },
         "workloads": {
             "type": "string",
