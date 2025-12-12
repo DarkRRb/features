@@ -29,7 +29,6 @@ for workload in "${workloads[@]}"; do
 done
 
 # fix https://github.com/microsoft/vscode-dotnettools/issues/1503
-ln -s /usr/local/dotnet/host/fxr/9.0.2/libhostfxr.so /usr/local/dotnet/shared/Microsoft.NETCore.App/9.0.2/libhostfxr.so
 for source_dir in /usr/local/dotnet/host/fxr/*; do
   version=${source_dir##*/}
   ln -sf "$source_dir/libhostfxr.so" "/usr/local/dotnet/shared/Microsoft.NETCore.App/$version/libhostfxr.so"
